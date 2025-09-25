@@ -176,15 +176,69 @@ else:
 
 # #### try-except e if
 
+try: 
+    v1 = float(input('digite um númeor'))
+    v2 = float(input('digite outro '))
+
+    if v1 != v2:
+        print('diferente')
+    else:
+        print('iguais')
+except KeyboardInterrupt:
+    print('acho que vc n quis inserir um número ')
+
+
+
 # 21: Conversor de Temperatura
+#%%
+print(type(len('aaa')))
+try: 
+    temp = int(input('qual temperatura vc deseja converter '))
+    kelvin = temp + 273
+    print(f'a temperatua{temp} em kelvin é {kelvin}')
+except TypeError:
+    print(TypeError) 
+
 # 22: Verificador de Palíndromo
+#%%
+palavra = input('digite uma palavra pra verificar se é palindromp')
+letras =len(palavra) -1
+print(palavra)
+print(palavra[::-1])
+if palavra== palavra[::-1]:
+    print('palindromo')
+else:
+    print('não é')
 # 23: Calculadora Simples
+#%%
+try:
+    n1 =int(input('digite numero'))
+    n2 =int(input('digite numero'))
+    op=input('qual operação')
+    if op == 'soma':
+        print(n1+n2)
+    elif op == 'subtração':
+        print(n1-n2)
+    elif op == 'multiplicação':
+        print(n1*n2)
+    elif op == 'divisão':
+        print(n1/n2)
+    else:
+        print('sem operação')
+except ValueError:
+    print('valor incorreto digite numero inteiro',ValueError)
+
+
+
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
+#%%
 
 
+palavra = 'onomatopeia'
 
-
-
-
+palavra[:0]
+palavra[2:]
+palavra[::7]
+palavra[::5]
 # %%
